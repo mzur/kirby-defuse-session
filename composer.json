@@ -1,6 +1,6 @@
 {
     "name": "mzur/kirby-defuse-session",
-    "description": "Disables the default Kirby session and replaces it with a simple array for testing purposes.",
+    "description": "Allows you to to write tests for code that uses the Kirby 3 session.",
     "type": "library",
     "license": "MIT",
     "keywords": ["kirby", "testing", "session"],

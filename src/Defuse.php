@@ -6,8 +6,8 @@ use Kirby\Cms\App as BaseApp;
 
 class Defuse
 {
-    public static function defuse()
+    public static function defuse(array $options = [])
     {
-        BaseApp::instance(new App);
+        BaseApp::instance(new App($options));
     }
 }

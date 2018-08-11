@@ -23,4 +23,10 @@ class TestCase extends \PHPUnit\Framework\TestCase
         $this->assertEquals('testValue', $session->pull('testKey'));
         $this->assertNull($session->get('testKey'));
     }
+
+    public function testOptions()
+    {
+        Defuse::defuse(['options' => ['debug' => true]]);
+        $this->assertTrue(App::instance()->option('debug'));
+    }
 }
