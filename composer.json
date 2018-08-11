@@ -1,0 +1,36 @@
+{
+    "name": "mzur/kirby-defuse-session",
+    "description": "Disables the default Kirby session and replaces it with a simple array for testing purposes.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["kirby", "testing", "session"],
+    "authors": [
+        {
+            "name": "Martin Zurowietz",
+            "email": "martin@the-inspired-ones.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mzur\\Kirby\\DefuseSession\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mzur\\Kirby\\DefuseSession\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/k-next/kirby.git"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "getkirby/cms": "@beta"
+    }
+}
