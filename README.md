@@ -23,7 +23,7 @@ public function testSession()
 ## Installation
 
 ```bash
-composer require-dev mzur/kirby-defuse-session
+composer require --dev mzur/kirby-defuse-session:@beta
 ```
 
 ## Contributing
