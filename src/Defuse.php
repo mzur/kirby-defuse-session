@@ -2,12 +2,18 @@
 
 namespace Mzur\Kirby\DefuseSession;
 
-use Kirby\Cms\App as BaseApp;
+use Kirby\Cms\App;
 
 class Defuse
 {
     public static function defuse(array $options = [])
     {
-        BaseApp::instance(new App($options));
+        $options = array_merge_recursive($options, [
+            'roots' => [
+                'session' => new ArraySessionStore,
+            ],
+        ]);
+
+        App::instance(new App($options));
     }
 }
