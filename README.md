@@ -1,5 +1,7 @@
 # Kirby Defuse Session
 
+**Archived:** Use PHPUnit [process isolation](https://docs.phpunit.de/en/10.0/configuration.html#the-processisolation-attribute) instead.
+
 [![Build Status](https://travis-ci.org/mzur/kirby-defuse-session.svg?branch=master)](https://travis-ci.org/mzur/kirby-defuse-session)
 
 Allows you to to write tests for code that uses the Kirby 3 session.
